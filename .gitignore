@@ -1,3 +1,6 @@
+.gitignore
+*.orig
+*.rej
 drw.o
 dwm
 dwm.o
