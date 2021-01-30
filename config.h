@@ -119,7 +119,6 @@ ResourcePref resources[] = {
 #include "shiftview.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
@@ -132,6 +131,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_n,      shiftview,     {.i = +1 } },
 	{ MODKEY,                       XK_b,      shiftview,     {.i = -1 } },
 	{ MODKEY,                       XK_w,      spawn,     	  SHCMD("$BROWSER") },
+	{ MODKEY,                       XK_p,      spawn,     	  SHCMD("rofi -show drun") },
 	{ MODKEY,              		XK_z,      incrgaps,       {.i = +3 } },
 	{ MODKEY,    			XK_x,      incrgaps,       {.i = -3 } },
 	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
